@@ -30,7 +30,7 @@ fn handle(_r: Request, res: Response) {
     try_return!(res.end());
 }
 
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 struct Foo;
 
 impl hyper::header::Header for Foo {

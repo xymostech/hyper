@@ -46,7 +46,7 @@ impl Writer for MockStream {
     }
 }
 
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 struct Foo;
 
 impl hyper::header::Header for Foo {
